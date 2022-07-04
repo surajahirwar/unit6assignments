@@ -31,30 +31,20 @@ export default function Home() {
         <div className="container marketing">
 
         <div className="row heading_div" >
-        <div className="col-lg-2">
-            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <div className="col-lg-3">
+            <img className="bd-placeholder-img rounded-circle" width="140" height="140" src='https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/users/user1.jpg' />
             <h2 className="fw-normal">Heading</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
-        <div className="col-lg-2">
-            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <div className="col-lg-3">
+            <img className="bd-placeholder-img rounded-circle" width="140" height="140" src='https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/users/user2.jpg' />
             <h2 className="fw-normal">Heading</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
-        <div className="col-lg-2">
-            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-            <h2 className="fw-normal">Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <div className="col-lg-2">
-            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        <div className="col-lg-3">
+            <img className="bd-placeholder-img rounded-circle" width="140" height="140" src='https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/users/user3.jpg' />
             <h2 className="fw-normal">Heading</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
