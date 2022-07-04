@@ -1,0 +1,61 @@
+﻿What are some new things happening on the web?
+
+
+#1 Progressive Web Apps (PWA)
+#2 Artificial Intelligence and Bots.
+#3 Accelerated Mobile Pages (AMP)
+#4 Single Page Application (SPA)
+#5 Voice Search Optimization.
+#6 Motion UI.
+#7 Automation Testing.
+#8 JavaScript Frameworks.
+
+
+Explain a project that you have built?
+I have built four projects till now which are wowindia_clone, djangoBlog_clone, lyst_clone, and Bobbibrown_clone.
+Talking about my individual project which is maxfashion_clone.
+
+
+The First click on https://fluffy-mermaid-1fa62f.netlify.app/ to reach the home page where you can see the navbar footer and the body of the homepage, Navbar is Provided with many routes and links and it also has a cart link that is a protected route, so without logging in user cannot open that cart page.
+
+
+Then after checking the cart link user will be redirected to the login page because of the protected route and then he has to login in order to see the cart page.
+
+
+Users can manually signup and log in as there is a link provided for login and signup but do keep in mind that I have used JSON-server, so the email and password of login should be according to uses email and password, And then the user gets logged in after successful authentication.
+
+
+So in the categories section, there are many lists of items where the user can filter and sort, and then he can add the product to the cart and then he can visit the cart and from there he can delete items from the cart and then he can proceed to the checkout page.
+
+
+On the checkout page, the user has to fill in all the contact details, and where he can set the promo code also. If a person enters "meanbuy30" he gets a 30% discount.
+
+
+So after that user can proceed to the payment page where he can enter the OTP which is already set to "1234". Then at last he sees the thanks page.
+
+
+What's something exciting that you have built?
+
+
+When I got an async in unit 5 after the end of the month I got a chance to build something new including all the new fetchers I build something exciting max fashion clone.
+This website I build along with redux that for me very exciting I never build a website along with
+Many fetchers here you can log in and signup to find something new with the search bar you can sort here and filter products. Users can add to card products and by products.
+ 
+
+
+How do you go about managing responsive websites?
+Focusing On The Content. ...
+Get To Know The Media Query. ...
+Keeping A “Mobile First” Mentality. ...
+Creating A Flexible Foundation. ...
+Pick The Right Content Management System (CMS)
+
+
+What do you care about the most when you write software?
+Using Meaningful Names. ...
+Single Responsibility Principle (SRP) ...
+Avoiding Writing Unnecessary Comments. ...
+Writing Readable Code For People. ...
+Being Careful With Dependencies. ...
+Make  Project Well Organized.
+Code in strict mode
