@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+.button {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 48px;
+  }
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+input{
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+}
+
+span{
+    font-size: 25px;
+    font-family: sans-serif;
+    color:orange;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>add a number here and click</h1>
+    <input  type="number" value="10"  id="inputfeed"/>
+    <button onclick="getdata()" class="button" >Click me</button>
+   
+</div>
+
+<div>
+    <span id="spandiv">your number 10</span> 
+
+</div>
+
+</body>
+
+<script>
+
+    // console.log(value);
+    function getdata(){
+        
+        var num = document.querySelector('input').value;
+        var sumvalue = (Number(num)+1)
+        document.getElementById("spandiv").innerHTML = sumvalue;
+        
+        
+        console.log(num)
+    }
+
+</script>
+
+</html>
