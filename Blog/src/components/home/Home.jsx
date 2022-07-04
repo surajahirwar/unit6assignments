@@ -1,20 +1,20 @@
 import React from 'react'
-
+import "./Style.css"
 export default function Home() {
   return (
     <div>         
         <main>
 
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                <div className="carousel-item active" >
-                    <img style={{height:"500px"}} src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" className="d-block w-100 vh-50" alt="..." />
+                <div className="carousel-inner slider_div">
+                <div className="carousel-item active">
+                    <img style={{height:"500px"}} src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/img/blog1.jpg" className="d-block w-100 vh-50" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img style={{height:"500px"}} src="https://www.wpbeginner.com/wp-content/uploads/2016/11/choose-best-blogging-platform.png" className="d-block w-100" alt="..." />
+                    <img style={{height:"500px"}} src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/img/blog2.jpg" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img style={{height:"500px"}} src="https://www.wpbeginner.com/wp-content/uploads/2016/11/choose-best-blogging-platform.png" className="d-block w-100" alt="..." />
+                    <img style={{height:"500px"}} src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/img/blog3.jpg" className="d-block w-100" alt="..." />
                 </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -30,29 +30,37 @@ export default function Home() {
 
         <div className="container marketing">
 
-        <div className="row">
-        <div className="col-lg-4">
-            <img className="bd-placeholder-img rounded-circle" width="140" height="140" src="https://socialmedia4us.files.wordpress.com/2018/01/blog.jpg" />
-            <svg  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-            <h2 className="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <div className="col-lg-4">
+        <div className="row heading_div" >
+        <div className="col-lg-2">
             <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
             <h2 className="fw-normal">Heading</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-2">
             <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
             <h2 className="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
+        <div className="col-lg-2">
+            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+            <h2 className="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        <div className="col-lg-2">
+            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+            <h2 className="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        
+       
         </div>
 
 

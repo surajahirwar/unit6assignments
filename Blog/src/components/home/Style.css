@@ -1,0 +1,16 @@
+
+.heading_div{
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* .slider_div{
+  
+
+} */
+.slider_div div{
+    padding-right: 50px;
+    padding-left: 50px;   
+}
