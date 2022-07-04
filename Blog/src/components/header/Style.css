@@ -1,0 +1,24 @@
+
+.main_navbar{
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+
+.navbar_ul{
+    /* background-color: red; */
+    
+}
+.navbar_ul ul li{
+    margin-left: 40px;
+    color: black;
+}
+
+.navbar_ul ul li a{
+    margin-left: 40px;
+    color: black;
+}
+
+.main_navbar a{
+    color: black;
+}   
