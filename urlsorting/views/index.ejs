@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form action="/sorting" method="POST" class="my-4 form-inline">
+            <label for="urlf" class="sr-only">Url</label>
+            <input required placeholder="Url" type="url" name="urlf" id="urlf" class="form-control col mr-2">
+            <button class="btn btn-success" type="submit">Shorten</button>
+        </form>
+
+        <table class="table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% sorting.forEach(sorting=> { %>
+                    <tr>
+                        <td><a href="<%= sorting.full %>">
+                                <%= sorting.full %>
+                            </a></td>
+                        <td><a href="<%= sorting.short %>">
+                                <%= sorting.short %>
+                            </a></td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
