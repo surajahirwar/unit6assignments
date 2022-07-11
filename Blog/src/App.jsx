@@ -1,5 +1,8 @@
+import { Route, Routes } from "react-router-dom"
+import Fotter from "./components/fotter/Fotter"
 import Header from "./components/header/Header"
 import Home from "./components/home/Home"
+import Post from "./components/posts/Post"
 
 function App() {
 
@@ -8,9 +11,14 @@ function App() {
 
     <Header />
 
-    <Home />      
+      
 
+    <Routes>
+      <Route path="/post" element={<Post /> } />
+      <Route path="/" element={<Home />} />
+    </Routes>
 
+    <Fotter/>
     </div>
   )
 }

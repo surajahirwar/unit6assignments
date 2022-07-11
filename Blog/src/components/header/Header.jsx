@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./Style.css";
 export default function Header() {
   return (
@@ -14,10 +15,11 @@ export default function Header() {
       <div className="collapse navbar-collapse navbar_ul" id="navbarCollapse">
         <ul className="navbar-nav me-auto mb-3 mr-50 mb-md-0">
           <li className="nav-item">
-            <a style={{color:"black"}} className="nav-link active dark" aria-current="page" href="#">Home</a>
+            <Link style={{color:"black"}} className="nav-link active dark" aria-current="page" href="#" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a style={{color:"black"}} className="nav-link active" aria-current="page" href="#">View</a>
+            <Link style={{color:"black"}} className="nav-link active" aria-current="page" href="#" to="/post">Post</Link>
+            
           </li>
           <li className="nav-item">
             <a style={{color:"black"}} className="nav-link active" aria-current="page" href="#">About</a>
