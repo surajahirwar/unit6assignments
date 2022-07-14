@@ -1,3 +1,35 @@
 {
  
+    "posts":[
+            {
+                "id":1,
+                "title":"First featurette heading.",
+                "heading":"It’ll blow your mind.",
+                "description": "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
+                "img":"https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post1.jpg"
+            },
+            {
+                "id":2,
+                "title":"First featurette heading.",
+                "heading":"It’ll blow your mind.",
+                "description": "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
+                "img":"https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post2.jpg"
+            },
+            {
+                "id":3,
+                "title":"First featurette heading.",
+                "heading":"It’ll blow your mind.",
+                "description": "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
+                "img":"https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post3.jpg"
+            },
+            {
+                "id":4,
+                "title":"First featurette heading.",
+                "heading":"It’ll blow your mind.",
+                "description": "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
+                "img":"https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post1.jpg"
+            }
+
+    ]
+
 }
