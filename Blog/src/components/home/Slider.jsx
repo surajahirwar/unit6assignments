@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Style.css"
-import {slider1}  from "../../../public/img/slider1.svg"
+
 export default function Slider() {
-  return (
-    <div>
-        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+  return (<div>
+    
+  <div  id="myCarousel" className="carousel main_slider " data-bs-ride="carousel">
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -12,7 +12,8 @@ export default function Slider() {
     </div>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns={slider1} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        {/* <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> */}
+        <img className="bd-placeholder-img" width="100%" aria-hidden="false" preserveAspectRatio="xMidYMid slice" focusable="false" height="100%" src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post3.jpg" />
 
         <div className="container">
           <div className="carousel-caption text-start">
@@ -23,7 +24,8 @@ export default function Slider() {
         </div>
       </div>
       <div className="carousel-item">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img className="bd-placeholder-img" width="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" height="100%" src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post1.jpg" />
+        {/* <svg  xmlns="http://www.w3.org/2000/svg" ><rect width="100%" height="100%" fill="#777"/></svg> */}
 
         <div className="container">
           <div className="carousel-caption">
@@ -34,7 +36,8 @@ export default function Slider() {
         </div>
       </div>
       <div className="carousel-item">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        {/* <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> */}
+        <img className="bd-placeholder-img" width="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" height="100%" src="https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post2.jpg" />
 
         <div className="container">
           <div className="carousel-caption text-end">
@@ -54,8 +57,6 @@ export default function Slider() {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-
-
 
     </div>
   )

@@ -25,7 +25,9 @@ export default function Header() {
             <a style={{color:"black"}} className="nav-link active" aria-current="page" href="#">About</a>
           </li>
           <li className="nav-item">
-            <a style={{color:"black"}} className="nav-link active" aria-current="page" href="#">Contect Us</a>
+            
+            <Link style={{color:"black"}} className="nav-link active" aria-current="page" href="#" to="/contectus">Contect Us</Link>
+            
           </li>
         </ul>
         

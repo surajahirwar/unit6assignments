@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getposts } from '../../Redux/Fetchdata/action'
+import Slider from './Slider'
 import "./Style.css"
 export default function Home() {
 
@@ -16,11 +17,14 @@ useEffect(()=>{
 // if(getdata.loading) return <div className="loading_div"><img src="https://i.imgur.com/buO4Nt2.gif" /></div>
 // if(getdata.error) return <div>Error...</div>  
   return (
-    <div>         
+    
+    <div>
+        <Slider />
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=2968317800092904&autoLogAppEvents=1" nonce="aqKbQndw"></script>         
         <main>
         <div className="container marketing">
             
-
+    
         <div className="row heading_div" >
         <div className="col-lg-3">
             <img className="bd-placeholder-img rounded-circle" width="140" height="140" src='https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/users/user1.jpg' />
@@ -48,26 +52,35 @@ useEffect(()=>{
         <hr className="featurette-divider" />
        
         {data.map((e)=> (
-       <div>
+            <div>
         <div className="row featurette">
-            <div className="col-md-7">
+            <div className={e.id%2==0 ? "col-md-7 order-md-2" : "col-md-7"} >
                 <h2 className="featurette-heading fw-normal lh-1">{e.title}<span className="text-muted">{e.heading}</span></h2>
                 <p className="lead">{e.description}</p>
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fresonant-crumble-45576d.netlify.app%2F&width=120&layout=button&action=like&size=small&share=true&height=65&appId=2968317800092904" width="120" height="65"  scrolling="no"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+           <div className="fb-comments" data-href="http://localhost:3000/"  data-numposts="2"></div>
+                <iframe key={e.id} src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fresonant-crumble-45576d.netlify.app%2F&width=120&layout=button&action=like&size=small&share=true&height=65&appId=2968317800092904" width="120" height="65"  scrolling="no"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
             <div className="col-md-5">
                 <img  width="500" height="500" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" aria-label="Placeholder: 500x500" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src={e.img} />
 
             </div>
+            </div>
+
+            <hr className="featurette-divider" />
+            </div>     
+            ))} 
         </div>
 
-        <hr className="featurette-divider" />
-        </div>     
-        ))} 
-        </div>
+
+        <div class="container marketing">
 
 
-       
+
+
+<hr class="featurette-divider" />
+
+
+</div>
 </main>    
 
     </div>
