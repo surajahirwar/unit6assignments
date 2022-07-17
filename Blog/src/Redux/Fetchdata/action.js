@@ -3,7 +3,7 @@ import { GETPOSTS_ERROR, GETPOSTS_LOADING, GETPOSTS_SUCCESS } from "./type"
 
 export const getposts = () => (dispatch)=>{
     dispatch({type:GETPOSTS_LOADING});
-    axios.get("http://localhost:8080/posts/")
+    axios.get("https://masaischool.herokuapp.com/posts")
     .then((e)=> {
         dispatch({type:GETPOSTS_SUCCESS, payload:e.data})
     })
