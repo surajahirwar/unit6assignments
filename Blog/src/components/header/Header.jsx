@@ -8,7 +8,9 @@ export default function Header() {
 <header>
   <nav className="navbar navbar-expand-md navbar-dark fixed-top main_navbar ">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Logo</a>
+      {/* <a className="navbar-brand" href="#">Logo</a> */}
+      <Link style={{color:"black", fontSize:"25px"}} className="nav-link active" aria-current="page" href="#" to="/">Logo</Link>
+
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -22,7 +24,7 @@ export default function Header() {
             
           </li>
           <li className="nav-item">
-            <a style={{color:"black"}} className="nav-link active" aria-current="page" href="#">About</a>
+          <Link style={{color:"black"}} className="nav-link active" aria-current="page" href="#" to="/about">About Us</Link>
           </li>
           <li className="nav-item">
             
@@ -31,7 +33,10 @@ export default function Header() {
           </li>
         </ul>
         
-          <button className="btn btn-outline-success" type="submit">Search</button>
+          <button className="btn btn-outline-success" type="submit">
+      <Link className="nav-link active" aria-current="page" to="/login">Logo</Link>
+
+          </button>
        
       </div>
     </div>
