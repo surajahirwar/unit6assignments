@@ -1,0 +1,16 @@
+.tasks {
+
+  width: 350px;
+  margin: auto;
+  background-color: white;
+  padding:5px;
+}
+
+.empty {
+
+  width: 350px;
+  margin: auto;
+  background-color: white;
+  color: teal;
+  padding:5px;
+}
