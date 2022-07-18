@@ -9,6 +9,6 @@ export const getposts = () => (dispatch)=>{
     })
     .catch(()=>{
         dispatch({type:GETPOSTS_ERROR, payload:null})
-    });
+    });q
 
 }
