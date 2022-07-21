@@ -34,7 +34,7 @@ export default function Header() {
         </ul>
         
           <button className="btn btn-outline-success" type="submit">
-      <Link className="nav-link active" aria-current="page" to="/login">Logo</Link>
+      <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
 
           </button>
        

@@ -1,4 +1,4 @@
-import { GETPOSTS_ERROR, GETPOSTS_LOADING, GETPOSTS_SUCCESS } from "./type";
+import { GETPOSTS_ERROR, GETPOSTS_LOADING, GETPOSTS_SUCCESS, ADDPOST } from "./type";
 
 
 
@@ -15,6 +15,9 @@ var inital = {
 export const dataReducer = (state=inital, {type, payload}) => {
 
     switch(type){
+        case ADDPOST:{
+            return { ...state,data:payload}
+        }
         case GETPOSTS_LOADING:{
             return { ...state, getdata:{
                 ...state.getdata,

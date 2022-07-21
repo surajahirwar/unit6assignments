@@ -3,8 +3,8 @@
     "posts":[
             {
                 "id":1,
-                "title":"First featurette heading.",
-                "heading":"It’ll blow your mind.",
+                "title":"Learn about Django",
+                "heading":"Django is a framework for Python",
                 "description": "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
                 "img":"https://raw.githubusercontent.com/surajahirwar/unit6assignments/main/Blog/public/posts/post1.jpg"
             },

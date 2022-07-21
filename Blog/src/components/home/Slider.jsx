@@ -17,9 +17,9 @@ export default function Slider() {
 
         <div className="container">
           <div className="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Learn about masai </h1>
+            <p>The Maasai inhabit the African Great Lakes region and arrived via the South Sudan. Most Nilotic speakers in the area, including the Maasai, the Turkana and the Kalenjin, are pastoralists, and are famous for their fearsome reputations as warriors and cattle-rustlers.</p>
+            {/* <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p> */}
           </div>
         </div>
       </div>
@@ -29,9 +29,9 @@ export default function Slider() {
 
         <div className="container">
           <div className="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>Learn about Django</h1>
+            <p>Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit.</p>
+            {/* <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p> */}
           </div>
         </div>
       </div>
@@ -41,9 +41,9 @@ export default function Slider() {
 
         <div className="container">
           <div className="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Learn about react js</h1>
+            <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.</p>
+            {/* <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p> */}
           </div>
         </div>
       </div>
