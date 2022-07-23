@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    cursor: pointer;
    
 }
 /* .slider_div{
@@ -19,4 +20,17 @@
 
 .main_slider img{
     height: 600px;
+}
+
+.loading_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 500px;
+}
+
+.featurette{
+    cursor: pointer;
 }

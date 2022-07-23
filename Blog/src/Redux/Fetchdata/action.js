@@ -4,7 +4,7 @@ import { GETPOSTS_ERROR, GETPOSTS_LOADING, GETPOSTS_SUCCESS } from "./type"
 
 export const getposts = () => (dispatch)=>{
     dispatch({type:GETPOSTS_LOADING});
-    axios.get("http://localhost:8080/posts")
+    axios.get("https://masaischool.herokuapp.com/posts")
     .then((e)=> {
         dispatch({type:GETPOSTS_SUCCESS, payload:e.data})
     })
@@ -17,7 +17,7 @@ export const getposts = () => (dispatch)=>{
 export const addpost=(data)=>{
     return async(dispatch, getState, api) => {
         try {
-             await fetch("http://localhost:8080/posts",{
+             await fetch("https://masaischool.herokuapp.com/posts",{
                     method:"POST",
                     body:JSON.stringify(data),
                     headers:{

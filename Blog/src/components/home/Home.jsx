@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getposts } from '../../Redux/Fetchdata/action'
 import Slider from './Slider'
 import "./Style.css"
+import {useNavigate} from "react-router-dom"
 export default function Home() {
 
 const dispatch=(useDispatch())
@@ -11,7 +12,18 @@ const {data, getdata} = useSelector((state)=> state.data)
 
 useEffect(()=>{
         dispatch(getposts())
+
 },[])
+
+const navigate = useNavigate();
+const sendid  = (id) =>{
+    if(id){
+        console.log(id)
+        navigate(`/postdetails/${id}`)
+
+    }
+}
+
 
 
 if(getdata.loading) return <div className="loading_div"><img src="https://i.imgur.com/buO4Nt2.gif" /></div>
@@ -19,6 +31,7 @@ if(getdata.error) return <div>Error...</div>
   return (
     
     <div>
+   
         <Slider />
         <main>
         <div className="container marketing">
@@ -52,11 +65,13 @@ if(getdata.error) return <div>Error...</div>
        
         {data.map((e)=> (
             <div key={e.id}>
-                <div className="row featurette">
+                <div className="row featurette" onClick={()=> sendid(e.id)}>
                 <div className={e.id%2==0 ? "col-md-7 order-md-2" : "col-md-7"} >
-                    <h2 className="featurette-heading fw-normal lh-1">{e.title}<span className="text-muted">{e.heading}</span></h2>
-                    <p className="lead">{e.description}</p>
-                     <div className="fb-comments" data-href="http://localhost:3000/"  data-numposts="2"></div>
+                     <h2 className="featurette-heading fw-normal lh-1">{e.title}<span className="text-muted">{e.heading}</span></h2>
+                    {/* {()=>showless(e.description)} */}
+                    <p className="lead">{`${e.description}`.substring(0, 300)+"..."}</p>
+                    <div className="fb-comments" data-href="https://masaischoolblog.netlify.app/" data-width="" data-numposts="2"></div>
+
                     <iframe  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fresonant-crumble-45576d.netlify.app%2F&width=120&layout=button&action=like&size=small&share=true&height=65&appId=2968317800092904" width="120" height="65"  scrolling="no"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
                 <div className="col-md-5">
@@ -74,9 +89,6 @@ if(getdata.error) return <div>Error...</div>
         <div className="container marketing">
 
 
-
-
-<hr className="featurette-divider" />
 
 
 </div>

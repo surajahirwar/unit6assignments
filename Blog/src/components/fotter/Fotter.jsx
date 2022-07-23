@@ -6,10 +6,12 @@ export default function Fotter() {
 
 
 
-<footer className="container">
-        <p className="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+<footer className=" footer">
+        
+        <p className="float-start"><a href="#">Back to top</a></p>
+        <p className="name-link">&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <a href="https://twitter.com/agneymenon" target="_blank" className="name-link">Boy masaischool project</a>
+  </footer>
 
     </div>
   )

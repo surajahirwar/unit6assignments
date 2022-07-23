@@ -9,9 +9,9 @@ export default function Header() {
   <nav className="navbar navbar-expand-md navbar-dark fixed-top main_navbar ">
     <div className="container-fluid">
       {/* <a className="navbar-brand" href="#">Logo</a> */}
-      <Link style={{color:"black", fontSize:"25px"}} className="nav-link active" aria-current="page" href="#" to="/">Logo</Link>
+      <Link style={{color:"red",fontWeight:"600", fontFamily:"sans-serif",  fontSize:"30px"}} className="nav-link active" aria-current="page" href="#" to="/"><img src="https://www.masaischool.com/img/navbar/logo.svg" /></Link>
 
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" type="button" style={{color:"black", backgroundColor:"black"}} data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse navbar_ul" id="navbarCollapse">
